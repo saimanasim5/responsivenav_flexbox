@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>navbar_flexbox</title>
+</head>
+<body>
+
+    <div class="navbar">
+        
+        <div class="logobar">
+            <span>B</span><span>E</span>
+            <span>S</span><span>MART</span>
+        </div>
+        <div class="menu">
+            <ul>
+               <li><a href="#">home</a></li>
+               <li><a href="#">product</a></li>
+               <li><a href="#">features</a></li>
+               <li><a href="#">watches</a></li>
+               <li><a href="#">client</a></li>
+               <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+		<div class="toggle_bar"><i class="fa fa-bars"></i></div>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $(".toggle_bar").click(function(){
+    $(".menu ul").toggleClass("show");
+  });
+});
+
+</script>
+</body>
+</html>
